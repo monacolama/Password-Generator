@@ -2,7 +2,7 @@
 
 This python program generates random passwords of **14 characters long**, with 3 lowercase letters, 3 uppercase letters, 4 numbers and 4 symbols.
 
-After the password is generated, it is crypted and wrote in a file text. The cryptography method uses the symple Caesar Code, with an alphabetical key which gets translated into an integer number, the real key of the Code.
+After the password is generated, it is crypted and wrote in a file text. The cryptography method uses the symple Caesar Cypher, with an alphabetical key which gets translated into an integer number, the real key of the Cypher.
 
 ## Cryptography method
 
