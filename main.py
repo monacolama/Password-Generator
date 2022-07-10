@@ -6,6 +6,7 @@ passwordSaverDict = {}
 # A string with all the characters used to write the password
 passwordCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~`!@#$%^&*()_-+={[}]|;'<,>.?/"
 
+# The alphabetical key is translated in this function
 def keyGenerator():
     key = input("Key: ")
     alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -17,10 +18,14 @@ def keyGenerator():
 
     for char in key:
 
+        # The index of the character is saved in a string variable
         temp = str(alphabet.index(char))
 
+        # If the integer variable is double digit, the digits are added together
+        # and added to the sum variable
         if int(temp) >= 10:
             summa += int(temp[0]) + int(temp[1])
+        # If not, the number is added to the sum variable
         else:
             summa += int(temp)
 
